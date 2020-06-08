@@ -50,6 +50,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading:IconButton(
+          onPressed: (){
+            SystemNavigator.pop();
+          },
+          icon: Icon(Icons.arrow_back_ios,color: Colors.white,),
+        )
+        ,
         title: Text('COVID-19 Tracker'),
         centerTitle: true,
       ),
